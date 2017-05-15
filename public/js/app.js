@@ -1,0 +1,1 @@
+console.log('from appjs2');
