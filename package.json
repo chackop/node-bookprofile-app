@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
-    "gulp-jshint": "^2.0.4"
+    "gulp-jshint": "^2.0.4",
+    "jade": "^1.11.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
