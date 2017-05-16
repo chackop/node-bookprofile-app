@@ -1,0 +1,26 @@
+html
+    head
+        //- bower:css
+        //- endbower
+        //- bower:js
+        script(src='/lib/jquery/dist/jquery.js')
+        script(src='/lib/bootstrap/dist/js/bootstrap.js')
+        //- endbower 
+        //- inject:css
+
+		link(rel="stylesheet", href="/css/styles.css")
+
+		//- endinject
+        //- inject:js    
+		
+        script(src="/js/app.js")    
+		
+        //- endinject 
+
+        title jd MyApp
+    body(class='myClass')
+        h1(id='MyId') jd My MyApp
+        h3 jd sub heading
+        ul
+            each val in list
+                li= val
