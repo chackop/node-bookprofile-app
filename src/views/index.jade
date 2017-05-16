@@ -1,7 +1,10 @@
+-var list = ['1', '2', '3']
 html
     head
         title jd MyApp
-    body
-        h1 jd My MyApp
-        p
-            h3 jd sub heading
+    body(class='myClass')
+        h1(id='MyId') jd My MyApp
+        h3 jd sub heading
+        ul
+            each val in list
+                li= val
