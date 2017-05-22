@@ -1,26 +1,26 @@
 var express = require('express');
 var adminRouter = express.Router();
 var mongodb = require('mongodb').MongoClient;
-var books = [
-    {
-        title: 'The Odyssey',
-        genre: 'Greek',
-        author: 'Homer',
-        read: false
-    },
-    {
-        title: 'War and Peace',
-        genre: 'History',
-        author: 'Tolstoy',
-        read: false
-    },
-    {
-        title: 'Moby Dick',
-        genre: 'Greek',
-        author: 'Melville',
-        read: true
-    }
-];
+// var books = [
+//     {
+//         title: 'The Odyssey',
+//         genre: 'Greek',
+//         author: 'Homer',
+//         read: false
+//     },
+//     {
+//         title: 'War and Peace',
+//         genre: 'History',
+//         author: 'Tolstoy',
+//         read: false
+//     },
+//     {
+//         title: 'Moby Dick',
+//         genre: 'Greek',
+//         author: 'Melville',
+//         read: true
+//     }
+// ];
 var router = function (nav) {
     adminRouter.route('/addBooks')
         .get(function (req, res) {
