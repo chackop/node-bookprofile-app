@@ -8,7 +8,7 @@ var bookController = function (bookService, nav) {
             res.redirect('/');
         }
         next();
-    }
+    };
     var getIndex = function (req, res) {
         var url = 'mongodb://localhost:27017/libraryApp';
         mongodb.connect(url, function (err, db) {
@@ -21,7 +21,7 @@ var bookController = function (bookService, nav) {
                 });
             });
         });
-    }
+    };
 
     var getById = function (req, res) {
         var id = new ObjectId(req.params.id);
