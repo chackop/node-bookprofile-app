@@ -29,11 +29,15 @@ var bookController = function (bookService, nav) {
         mongodb.connect(url, function (err, db) {
             var collection = db.collection('books');
             collection.findOne({_id: id}, function (err, results) {
-                res.render('bookView', {
-                    title: 'hello from books',
-                    nav: nav,
-                    book: results
+                bookService.getBookById(results.bookId, function (err, book) {
+                    results.book = book;
+                    res.render('bookView', {
+                        title: 'hello from books',
+                        nav: nav,
+                        book: results
+                    });
                 });
+
             }
             );
         });
