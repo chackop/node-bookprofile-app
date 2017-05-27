@@ -6,17 +6,20 @@ var books = [
         title: 'The Odyssey',
         genre: 'Greek',
         author: 'Homer',
+        bookId: 1381,
         read: false
     },
     {
         title: 'War and Peace',
         genre: 'History',
         author: 'Tolstoy',
+        bookId: 656,
         read: false
     },
     {
         title: 'Moby Dick',
         genre: 'Greek',
+        bookId: 153747,
         author: 'Melville',
         read: true
     }

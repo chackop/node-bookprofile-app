@@ -9,7 +9,7 @@ var goodreadsService = function (id) {
     var getBookById = function (id, cb) {
         var options = {
             host: 'www.goodreads.com',
-            path: '/book/show/1381?format=xml&key=NaQyDOvoIsm8tv3SA7Ujpw'
+            path: '/book/show/' + id + '?format=xml&key=NaQyDOvoIsm8tv3SA7Ujpw'
         };
         var callback = function (response) {
             var str = '';
